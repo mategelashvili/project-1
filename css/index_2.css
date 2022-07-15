@@ -150,6 +150,7 @@
   }
   .bottamm_icons{
     opacity: 0.2;
+    
   }
   .bottamtitle_p{
     font-size: 15px;
@@ -161,6 +162,7 @@
   .buttontitle_p2{
     margin-top: 10px;
     font-size: 15px;
+   
   }
   .footer{
     width: 100%;
@@ -373,6 +375,7 @@
         width: 40%;
         height: 10%;
         
+
     }
     .footer_3sides{display: none;}
     .footer_firstside{

@@ -78,7 +78,7 @@
         display: flex;
         margin-left: 50px;
         flex-direction: column;
-        height: 450px;
+        height: 300px;
         width: 35%;
         justify-content: space-between;
         margin-top: 50px;
@@ -122,6 +122,7 @@
     .section_2box_1{
         display: flex;
         flex-direction: column;
+        width: 320px;
         
         
         
@@ -131,6 +132,7 @@
         position: relative;
         
     }
+    
     .section_2box_1pic{
         width: 100%;
     }
@@ -151,11 +153,11 @@
     .section_2box_1text{
         margin-top: 50px;
         width: 250px;
-        margin-left: 70px;
+        margin-left: 40px;
     }
     .section_2box_p{
-       margin-top: 20px;
-       margin-left: 70px;
+       margin-top: 30px;
+       margin-left: 40px;
        font-size: 13px;
        opacity: 0.3;
     }
