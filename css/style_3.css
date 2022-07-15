@@ -3,12 +3,23 @@
     width: 100%;
     margin: 0 auto;
     background-color: #fcfcfc;
+    font-family: 'Splash', cursive;
   }
   .display {
     width: 79.2%;
     margin: 0 auto;
   
   }
+  .mobile{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    width: 400px;
+    height: 60px;}
+    .burger{
+      width: 50px;
+      height: 50px;
+    }
   .header {
     width: 100%;
     height: 100px;
@@ -22,6 +33,10 @@
   }
   .travel {
     margin-left: 73px;
+    position: relative;
+  }
+  .di{
+    position: relative;
   }
   .nav {
     display: flex;
@@ -31,6 +46,7 @@
   }
   .home {
     margin-right: 73px;
+    position: relative;
   }
   .navicon {
     width: 20px;
@@ -49,9 +65,10 @@
     .section1_boxes{
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
     }
     .box_1{
-        width: 80%;
+        width: 60%;
         height: 300px;
     }
     .box1_img{
@@ -62,7 +79,7 @@
         margin-left: 50px;
         flex-direction: column;
         height: 450px;
-        width: 40%;
+        width: 35%;
         justify-content: space-between;
         margin-top: 50px;
     }
@@ -97,17 +114,321 @@
         font-size: 13px;
     }
     .section_2{
-        width: 100%;
+        width: 90%;
         display: flex;
+        margin-top: 100px;
+        flex-wrap: wrap;
     }
     .section_2box_1{
         display: flex;
         flex-direction: column;
-        width: 30%;
+        
+        
+        
     }
     .section_2box_1img{
-        width: 30%;
+    width: 100%;
+        position: relative;
+        
     }
     .section_2box_1pic{
         width: 100%;
     }
+    .imgbtn{
+        position: absolute;
+       top: 40px;
+       right: 60px;
+       width: 130PX;
+       height: 30PX;
+       border-radius: 20PX;
+       border: none;
+       cursor: pointer;
+        
+    }
+    .section_2box_1pic{
+        width: 100%;
+    }
+    .section_2box_1text{
+        margin-top: 50px;
+        width: 250px;
+        margin-left: 70px;
+    }
+    .section_2box_p{
+       margin-top: 20px;
+       margin-left: 70px;
+       font-size: 13px;
+       opacity: 0.3;
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        height: 220px;
+        align-items: center;
+        margin-top: 30px;
+        margin: 30 auto;
+        
+        
+        
+      }
+      .footer_firstside{
+        width: 350px;
+        
+      }
+      .copyrighte{
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+      }
+      .footer_h{
+        font-size: 22px;
+      }
+      .footer_copy{
+        font-size: 18px;
+        opacity: 0.27;
+      }
+      .foter_travel{
+        margin-top: 30PX;
+      }
+      .footer_p{
+        font-size: 15;
+        opacity: 0.58;
+        margin-top: 5px;
+      }
+      .footer_secondside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 120px;
+        height:150px ;
+      }
+      .footer_3sides{
+        display: flex;
+        width: 60%;
+        margin-left: 20%;
+        justify-content: space-evenly;
+      }
+      .fotter_icons{
+        opacity: 0.1;
+      }
+     
+      .explord:hover{
+       border-bottom:5px blue  ;
+       width: 100px;
+       height: 50px;
+
+      }
+      .navicon{
+  
+        opacity: 1;
+        animation-name: icon;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+      }
+      .home:hover {
+        text-shadow: 0px 0px 5px rgb(209, 141, 141);
+        color: blue;
+        cursor: pointer;
+      }
+      .home:after {
+        content: "";
+        height: 5px;
+        width: 0px;
+        background: wheat;
+        box-shadow: 0px 0px 2px black;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -10px;
+        right: 0%;
+        transition: 1s;
+      }
+      .home:hover::after{
+      width: 100%;
+      left: 0%;
+      }
+      .discover:hover{
+        text-shadow: 0px 0px 5px rgb(209, 141, 141);
+        color: blue;
+        cursor: pointer;
+      }
+      .discover::after{
+        content: "";
+        height: 5px;
+        width: 0px;
+        background: wheat;
+        box-shadow: 0px 0px 2px black;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -10px;
+        right: 0%;
+        transition: 1s;
+      }
+      .discover:hover::after{
+        width: 100%;
+        left: 0%;
+      }
+      .travel:hover {
+        text-shadow: 0px 0px 5px rgb(209, 141, 141);
+        color: blue;
+        cursor: pointer;
+      }
+      .travel:after {
+        content: "";
+        height: 5px;
+        width: 0px;
+        background: wheat;
+        box-shadow: 0px 0px 2px black;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -10px;
+        right: 0%;
+        transition: 1s;
+      }
+      .travel:hover::after{
+      width: 100%;
+      left: 0%;
+      }
+      .discover:hover{
+        text-shadow: 0px 0px 5px rgb(209, 141, 141);
+        color: blue;
+        cursor: pointer;
+      }
+      .discover::after{
+        content: "";
+        height: 5px;
+        width: 0px;
+        background: wheat;
+        box-shadow: 0px 0px 2px black;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -10px;
+        right: 0%;
+        transition: 1s;
+      }
+      .discover:hover::after{
+        width: 100%;
+        left: 0%;
+      }
+      .di:hover {
+        text-shadow: 0px 0px 5px rgb(209, 141, 141);
+        color: blue;
+        cursor: pointer;
+      }
+      .di:after {
+        content: "";
+        height: 5px;
+        width: 0px;
+        background: wheat;
+        box-shadow: 0px 0px 2px black;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -10px;
+        right: 0%;
+        transition: 1s;
+      }
+      .di:hover::after{
+      width: 100%;
+      left: 0%;
+      }
+      .discover:hover{
+        text-shadow: 0px 0px 5px rgb(209, 141, 141);
+        color: blue;
+        cursor: pointer;
+      }
+      .discover::after{
+        content: "";
+        height: 5px;
+        width: 0px;
+        background: wheat;
+        box-shadow: 0px 0px 2px black;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -10px;
+        right: 0%;
+        transition: 1s;
+      }
+      .discover:hover::after{
+        width: 100%;
+        left: 0%;
+      }
+      @keyframes icon{
+        from{
+          opacity: 1;
+        }
+        to{
+         opacity: 0;
+        }
+      }
+      @media(max-width:1024px){
+        .box_1{
+            width: 40%;
+        }
+        .box_2{
+            width: 40%;
+            height: 200px;
+            margin-top: 0;
+        }
+        .section_2{
+            width: 100%;
+            margin-top: 20px;
+        }
+        .section_2box_1{
+            width: 40%;
+        }
+
+      }
+      @media(max-width:480px){
+        .header{
+            display: none;
+
+        }
+       .mobile{
+        opacity: 1;
+       }
+        .box_1{
+            width: 40%;
+            
+        }
+        .box_2{
+            width: 40%;
+           
+
+            margin-top: 0;
+        }
+        .box_2h{
+            font-size: 15px;
+        }
+        .box_2textp{
+            font-size: 10px;
+        }
+        .box_textp2{
+            font-size: 13px;
+        }
+        .box_2textp3{
+            font-size: 10px;
+        }
+       .section_2box_1{
+        margin-left: 50px;
+       display: flex;
+       }
+       .section_2box_1text{
+        width: 200px;
+        margin-left: 0;
+       }
+       .imgbtn{
+        width: 50px;
+        height: 20px;
+        font-size: 5px;
+        top: 30px;
+        right: 30px;
+       }
+       .footer{
+        width: 40%;
+        height: 10%;
+        
+       }
+       .footer_3sides{display: none;}
+       .footer_firstside{
+        margin-left: 100px;
+       }
+      }

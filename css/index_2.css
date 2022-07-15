@@ -3,12 +3,24 @@
     width: 100%;
     margin: 0 auto;
     background-color: #fcfcfc;
+    font-family: 'Splash', cursive;
   }
   .display {
     width: 79.2%;
     margin: 0 auto;
   
   }
+  .mobile{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    width: 400px;
+    height: 60px;}
+    .burger{
+      width: 50px;
+      height: 50px;
+    }
+
   .header {
     width: 100%;
     height: 100px;
@@ -22,6 +34,10 @@
   }
   .travel {
     margin-left: 73px;
+    position: relative;
+  }
+  .di{
+    position: relative;
   }
   .nav {
     display: flex;
@@ -31,6 +47,7 @@
   }
   .home {
     margin-right: 73px;
+    position: relative;
   }
   .navicon {
     width: 20px;
@@ -196,10 +213,148 @@
   .fotter_icons{
     opacity: 0.1;
   }
-  .burgericon{
-    width: 50px;
-    height: 50px;
-    display: none;
+ 
+  .navicon{
+  
+    opacity: 1;
+    animation-name: icon;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  .home:hover {
+    text-shadow: 0px 0px 5px rgb(209, 141, 141);
+    color: blue;
+    cursor: pointer;
+  }
+  .home:after {
+    content: "";
+    height: 5px;
+    width: 0px;
+    background: wheat;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    right: 0%;
+    transition: 1s;
+  }
+  .home:hover::after{
+  width: 100%;
+  left: 0%;
+  }
+  .discover:hover{
+    text-shadow: 0px 0px 5px rgb(209, 141, 141);
+    color: blue;
+    cursor: pointer;
+  }
+  .discover::after{
+    content: "";
+    height: 5px;
+    width: 10px;
+    background: wheat;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    right: 0%;
+    transition: 1s;
+  }
+  .discover:hover::after{
+    width: 100%;
+    left: 0%;
+  }
+  .travel:hover {
+    text-shadow: 0px 0px 5px rgb(209, 141, 141);
+    color: blue;
+    cursor: pointer;
+  }
+  .travel:after {
+    content: "";
+    height: 5px;
+    width: 0px;
+    background: wheat;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    right: 0%;
+    transition: 1s;
+  }
+  .travel:hover::after{
+  width: 100%;
+  left: 0%;
+  }
+  .discover:hover{
+    text-shadow: 0px 0px 5px rgb(209, 141, 141);
+    color: blue;
+    cursor: pointer;
+  }
+  .discover::after{
+    content: "";
+    height: 5px;
+    width: 0px;
+    background: wheat;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    right: 0%;
+    transition: 1s;
+  }
+  .discover:hover::after{
+    width: 100%;
+    left: 0%;
+  }
+  .di:hover {
+    text-shadow: 0px 0px 5px rgb(209, 141, 141);
+    color: blue;
+    cursor: pointer;
+  }
+  .di:after {
+    content: "";
+    height: 5px;
+    width: 0px;
+    background: wheat;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    right: 0%;
+    transition: 1s;
+  }
+  .di:hover::after{
+  width: 100%;
+  left: 0%;
+  }
+  .discover:hover{
+    text-shadow: 0px 0px 5px rgb(209, 141, 141);
+    color: blue;
+    cursor: pointer;
+  }
+  .discover::after{
+    content: "";
+    height: 5px;
+    width: 0px;
+    background: wheat;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    right: 0%;
+    transition: 1s;
+  }
+  .discover:hover::after{
+    width: 100%;
+    left: 0%;
+  }
+  @keyframes icon{
+    from{
+      opacity: 1;
+    }
+    to{
+     opacity: 0;
+    }
   }
   @media(max-width:1024px){
     .section2_bottamtitle{
@@ -211,17 +366,20 @@
     .header{
         display: none;
     }
-    .burgericon{
-        display: block;
+    .mobile{
+        opacity: 1;
     }
     .footer{
         width: 40%;
         height: 10%;
-    }
-    .footer_3sides{
-        display: inline;
         
     }
+    .footer_3sides{display: none;}
+    .footer_firstside{
+      margin-left: 100px;
+    }
+
+    
     .section2_botam{
         display: flex;
         align-items: center;
@@ -232,4 +390,5 @@
         margin-top: 20px;
     }
     }
+    
   
